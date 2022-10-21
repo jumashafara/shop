@@ -1,0 +1,19 @@
+THEME COLORS
+===================
+Forest green
+Black (dark)
+Whitesmoke (light)
+Blue
+
+PRODUCTS
+===================
+computers, phones and their accessories
+Interior design items
+Clothings
+
+PAGES
+====================
+Products
+Details
+Order
+Add product

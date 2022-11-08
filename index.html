@@ -4,11 +4,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/output.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/42e0e8b23e.js" crossorigin="anonymous"></script>
+    
+    <!-- custon js -->
+    <script defer src="js/functionality.js"></script>
     <title>Juma Shafara's Shop</title>
 </head>
-<body>
-    <h1>This Shop is under construction or repair.</h1>
-    <h1>To make an order, <a href="tel:+256701520768">Call Juma Shafara</a></h1>
+<body class="font-[Poppins]">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class="bg-[#228b24]" id="home">
+        <nav class= " flex flex-col md:flex-row container m-auto md:justify-between text-white  space-y-5 md:space-y-0 p-5">
+            <h1 class="font-extrabold text-2xl text-white text-center md:w-1/3">Juma Shafara's Shop</h1>
+            <ul class="flex flex-row space-x-5 m-auto md:w-2/3 justify-end">
+                <li>
+                    <a href="#shop" class="font-medium text-gray-200 hover:text-white active:white">
+                        <span class="md:hidden"><i class="fa-solid fa-shop"></i></span>
+                        <span class="hidden md:block"> Shop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="font-medium text-gray-200 hover:text-white active:white">
+                        <!--  -->
+                        <span class="md:hidden"><i class="fa-solid fa-address-card"></i></span>
+                        <span class="hidden md:block"> About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="font-medium text-gray-200 hover:text-white active:white">
+                        <!--  -->
+                        <span class="md:hidden"><i class="fa-solid fa-address-book"></i></span>
+                        <span class="hidden md:block"> Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!-- display -->
+
+    <section class="text-gray-900 py-10 p-5 flex flex-col space-y-5 md:px-24">
+        <div class="text-center">
+            <figure class="flex flex-col space-y-3 md:flex-row md:justify-between md:space-x-3 w-full m-auto">
+                <div class="w-3/4 m-auto">
+                    <div class="price flex float-right">
+                        <div class="w-7  overflow-hidden inline-block">
+                            <div class=" h-8  bg-blue-500 -rotate-45 transform origin-top-right"></div>
+                        </div>
+                        <p class="bg-blue-500 p-2 rounded-r font-medium text-white">
+                            Ugsh. 25,000
+                        </p>
+                    </div>   
+                    <img src="Assets/home.jpg" alt="">
+                    <div class="contact flex flex-col md:flex-row md:space-x-3 font-medium text-white">
+                        <a href="tel:+256771754118" 
+                        class="phone bg-gray-500 p-2 rounded w-3/5 md:1/3 m-auto mt-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </a>
+                        <a href="https://wa.me/+256771754118" target="_blank" 
+                        class="whatsapp bg-[#25D366] p-2 rounded w-3/5 md:1/3 mt-3 m-auto">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Whatsapp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-3/4 m-auto">
+                    <div class="price flex float-right">
+                        <div class="w-7  overflow-hidden inline-block">
+                            <div class=" h-8  bg-blue-500 -rotate-45 transform origin-top-right"></div>
+                        </div>
+                        <p class="bg-blue-500 p-2 rounded-r font-medium text-white">
+                            Ugsh. 25,000
+                        </p>
+                    </div>  
+                    <img src="Assets/away.jpg" alt="">
+                    <div class="contact flex flex-col md:flex-row md:space-x-3 font-medium text-white">
+                        <a href="tel:+256771754118" 
+                        class="phone bg-gray-500 p-2 rounded w-3/5 md:1/3 m-auto mt-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </a>
+                        <a href="https://wa.me/+256771754118" target="_blank" 
+                        class="whatsapp bg-[#25D366] p-2 rounded w-3/5 md:1/3 mt-3 m-auto">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Whatsapp</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-3/4 m-auto">
+                    <div class="price flex float-right">
+                        <div class="w-7  overflow-hidden inline-block">
+                            <div class=" h-8  bg-blue-500 -rotate-45 transform origin-top-right"></div>
+                        </div>
+                        <p class="bg-blue-500 p-2 rounded-r font-medium text-white">
+                            Ugsh. 25,000
+                        </p>
+                    </div>  
+                    <img src="Assets/third.jpg" alt="">
+                    <div class="contact flex flex-col md:flex-row md:space-x-3 font-medium text-white">
+                        <a href="tel:+256771754118" 
+                        class="phone bg-gray-500 p-2 rounded w-3/5 md:1/3 m-auto mt-3">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Call</span>
+                        </a>
+                        <a href="https://wa.me/+256771754118" target="_blank" 
+                        class="whatsapp bg-[#25D366] p-2 rounded w-3/5 md:1/3 mt-3 m-auto">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Whatsapp</span>
+                        </a>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about"
+    class="text-gray-900 py-10 p-5 flex flex-col space-y-5 md:px-24">
+<h1 class="font-extrabold text-5xl text-[#228b24] text-center pb-10">About Me</h1>
+<div class="flex flex-col md:flex-row md:space-x-10">
+    <main class="container m-auto flex flex-col p-3 space-y-5 md:w-2/3">
+        <h2 class="text-lg font-semibold">Hi, I'm Juma Shafara</h2>
+        <div class= "space-y-3">
+            <p>
+                In late 2019, I was introduced to the C language as a freshman module.
+                I was so astounded by the idea of being able to communicate more directly with the computer.
+                This was where my passion for programming started. So casually spent the next few months practicing C/C++ languages for the fun of it.
+            </p>
+            <p>
+                In the early 2020, we were hit by the pandemic that would change everything and give me an entirely different direction.
+                Due to obvious reasons, the world embraced the digital transformation at an expedited pace, remimagining technology's critical role in how we learn, work and live.
+                But at the same time, the COVID-19 pandemic illuminated the long-standing issue, the digital divide.
+                While countries that were ahead in technology quickly redeemed themselves by operating via the internet with efficiency, 
+                countries like mine that were lower in digital operation continued to sink further and life became harder.
+            </p>
+            <p>
+                I decided then to learn web development and merge it with the technical analytic skills I was getting from statistics, 
+                to develop more accurate and specific digital solutions that are based on data to uplift the statuses of whichever communities I were to live in, in the future, 
+                this became my new purpose.
+            </p>
+            <p>
+                I’m a firm believer in the growth mindset concept, and that “life is not about finding yourself, but about creating yourself” (George Bernard Shaw).
+            </p>
+        </div>
+        <div class="flex flex-col">
+            <h3 class="text-lg font-semibold text-center">My Tech Stack</h3>
+            <p>I'm proficient with the following relevant technologies</p>
+            <div class="w-full flex flex-col m-auto text-3xl p-5 space-y-3 text-center">
+                <div class="flex flex-row p-5 space-x-3 justify-center">
+                    <a href="" class="flex flex-col">
+                        <span><i class="fa-brands fa-js"></i></span>
+                        <span class="text-base">JavaScript</span>
+                    </a>
+                    <a href="" class="flex flex-col">
+                        <span><i class="fa-brands fa-python"></i></span>
+                        <span class="text-base">Python</span>
+                    </a>
+                    <a href="" class="flex flex-col">
+                        <span><i class="fa-brands fa-r-project"></i></span>
+                        <span class="text-base">R-Lang</span>
+                    </a>
+                    <a href="" class="flex flex-col">
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span class="text-base">
+                            <p>Git &</p>
+                            <p>GitHub</p>
+                        </span>
+                    </a>
+                </div>
+                <div class="flex flex-row p-5 space-x-3 justify-center">
+                    <a href="" class="flex flex-col">
+                        <span class="text-center"><i class="fa-brands fa-figma"></i></span>
+                        <span class="text-center text-base">Figma</span>
+                    </a>
+                    <!-- <a href="">MongoDB</a>
+                    <a href="">ExpressJS</a> -->
+                    <a href="" class="flex flex-col">
+                        <span class="text-center"><i class="fa-brands fa-react"></i></span>
+                        <span class="text-center text-base">React</span>
+                        </a>
+                    <a href="" class="flex flex-col">
+                        <span class="text-center "><i class="fa-brands fa-node"></i></span>
+                        <span class="text-center text-base">NodeJS</span>
+                    </a>
+                    <a href="" class="flex flex-col">
+                        <span class="text-center "><i class="fa-brands fa-windows"></i></span>
+                        <span class="text-center text-base">Windows</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside class="flex flex-col space-y-5 md:w-1/3">
+        <div class="relative bg-gray-200 rounded">
+            <img class = "rounded" 
+            src="https://drive.google.com/uc?export=view&id=1Kp84pJ2YuSvD3uATwePZiEKu1uXipE-t" alt="jumashafara">  
+        </div>
+        <a href="https://drive.google.com/file/d/1Lj8lXpxL2PGtHWaiHSgzNQjKjkXyhF-M/view?usp=sharing" 
+            target="_blank"
+            class="btn bg-[#228b24] hover:bg-green-500 rounded p-3 text-white text-center font-medium">See Resume</a>
+        <div class="flex flex-row p-5 space-x-3 justify-center text-3xl">
+            <a href="https://www.linkedin.com/in/jumashafara" 
+                class="flex flex-col text-center"
+                target = "_blank">
+                <span class=""><i class="fa-brands fa-linkedin"></i></span>
+                <span class="text-center text-base">LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/juma_shafara" target = "_blank" class="flex flex-col" >
+                <span class="text-center "><i class="fa-brands fa-square-twitter"></i></span>
+                <span class="text-center text-base">Twitter</span>
+            </a>
+            <a href="https://github.com/jumashafara" target = "_blank" class="flex flex-col">
+                <span><i class="fa-brands fa-github"></i></span>
+                <span class="text-base">
+                    <p>Git &</p>
+                    <p>GitHub</p>
+                </span>
+            </a>
+        </div>
+    </aside>
+</div>
+</section>
+     <!-- Contact -->
+     <section id="contact"
+     class="bg-zinc-900 text-white py-10 p-5 flex flex-col space-y-5n md:px-32">
+ <h1 class="font-extrabold text-5xl text-[#228b24] text-center pb-10">Contact</h1>
+ <div class="flex flex-col md:flex-row md:justify-between">
+     <h2 class="font-bold text-3xl">Lets get in touch</h2>
+     <div class="flex flex-row justify-between p-5 md:space-x-28">
+         <div class="flex flex-col space-y-3 w-1/2">
+             <a href="mailto: jumashafara0@gmail.com" target = "_blank"
+                 class="btn bg-[#228b24] hover:bg-green-500 rounded p-3 text-white text-center font-medium"
+             >Open Mailer</a>
+             <a href="https://www.linkedin.com/in/jumashafara" target = "_blank"
+             class="btn bg-gray-500 hover:bg-blue-500 rounded p-3 text-white text-center font-medium"    
+             >LinkedIn</a>
+         </div>
+         <div>
+             <span class="text-zinc-700 text-9xl w-1/2">
+                 <i class="fa-regular fa-envelope"></i>
+             </span>
+         </div>
+     </div>
+ </div>
+ <form 
+ class="email-form flex flex-col space-y-5 bg-[whitesmoke] text-gray-900 border-zinc-700  border-2 rounded p-5 m-auto ">
+     <label for="" class="flex flex-col space-y-3">
+         <p>Name</p>
+         <input  class="block border-2 border-zinc-700  rounded w-full p-3"
+             type="text" name="name" id="" onkeyup="sendMail()">
+     </label>
+     <label for="email" class="flex flex-col space-y-3">
+         <p>Email</p>
+         <input  class="block border-2 border-zinc-700  rounded w-full p-3"
+             type="text" name="email" id="" onkeyup="sendMail()">
+     </label>
+     <label for="text" class="flex flex-col space-y-3">
+         <p>Message</p>
+         <textarea class="block border-2 border-zinc-700 rounded w-full p-3"
+         name="message" id="" cols="300" rows="5" onkeyup="sendMail()"></textarea>
+     </label>
+     <div class="submit_button m-auto p-5 flex justify-center align-middle"></div>
+ </form>
+</section>
+<footer class="text-gray-900 py-10 p-5 flex flex-col-reverse space-y-5 md:px-32">
+ <main class="flex flex-col space-y-3 pt-10">
+     <p><i class="fa-solid fa-location-dot"></i><span> Kampala, Uganda</span></p>
+     <h1 class= "font-extrabold text-xl" >Juma Shafara</h1>
+     <h1 class= "font-extrabold text-3xl" >Web Developer, Statistician.</h1>
+     <div class="flex flex-col w-2/3 space-y-3 md:flex-row md:space-x-3 md:space-y-0">
+         <a href="https://drive.google.com/file/d/1Lj8lXpxL2PGtHWaiHSgzNQjKjkXyhF-M/view?usp=sharing" target="_blank"
+         class="btn bg-[#228b24] hover:bg-green-500 rounded p-3 text-white text-center font-medium">See Resume</a>
+         <a href="mailto: jumashafara0@gmail.com" class="btn bg-gray-500 hover:bg-blue-500 text-center rounded p-3 text-white font-medium">Send Email</a>
+     </div>
+     <div class="flex flex-row p-5 space-x-3 justify-center text-3xl text-center">
+         <a href="https://www.linkedin.com/in/jumashafara" target = "_blank" class="flex flex-col">
+             <span class=""><i class="fa-brands fa-linkedin"></i></span>
+             <span class="text-center text-base">LinkedIn</span>
+         </a>
+         <a href="https://twitter.com/juma_shafara" target = "_blank" class="flex flex-col">
+             <span class="text-center "><i class="fa-brands fa-square-twitter"></i></span>
+             <span class="text-center text-base">Twitter</span>
+         </a>
+         <a href="https://github.com/jumashafara" target = "_blank" class="flex flex-col">
+             <span><i class="fa-brands fa-github"></i></span>
+             <span class="text-base">
+                 <p>Git &</p>
+                 <p>GitHub</p>
+             </span>
+         </a>
+     </div>
+ </main>
+ <aside class="">
+     <ul class="flex flex-col space-y-3 px-3 w-full text-center">
+         <li>
+             <a href="#shop" class="font-medium">
+                 <span class=""> SHOP</span>
+             </a>
+         </li>
+         <li>
+             <a href="#about" class="font-medium">
+                 <span class=""> ABOUT</span>
+             </a>
+         </li>
+         <li>
+             <a href="#contact" class="font-medium">
+                 <span class=""> CONTACT</span>
+             </a>
+         </li>
+     </ul>
+ </aside>
+</footer>
+
+<!-- JavaScript -->
+<script src="/js/mailer.js"></script>
+<script src="/js/buttons.js"></script>
 </body>
 </html>
